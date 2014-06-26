@@ -12,10 +12,15 @@ end
 def cooking(raw_stations)
   raw_stations_list = raw_stations
 
-  array = raw_stations_list.keys
-  length = arrays.size
+  #array = raw_stations_list.keys
+  #length = arrays.size
 
-  puts length
+  #puts length
+
+  raw_stations_list.each do |burger|
+    name = burger["station_descriptive_name"]
+    puts name
+  end
 
   return raw_stations_list
 end
