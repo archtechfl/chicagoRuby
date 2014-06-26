@@ -17,10 +17,24 @@ def cooking(raw_stations)
 
   #puts length
 
+  blacklist = Array.new
+  non_dupe_list = Array.new
+
   raw_stations_list.each do |burger|
-    name = burger["station_descriptive_name"]
-    puts name
+    name_check = burger["station_descriptive_name"]
+
+
+   # check if current item matches any item in names array 
+    # if name_check == 'any item in blacklist' 
+    #  rejection 
+    #  else 
+    #   push name to blacklist 
+     blacklist.push(name_check)
+     non_dupe_list.push(burger)
+    #   push non_dupe_list
+    # end
+
   end
 
-  return raw_stations_list
+  return non_dupe_list
 end
