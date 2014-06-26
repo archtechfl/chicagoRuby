@@ -13,11 +13,9 @@ def cooking(raw_stations)
   raw_stations_list = raw_stations
 
   array = raw_stations_list.keys
-  puts(length = arrays.size)
+  length = arrays.size
 
-  for key in raw_stations_list [do]
-   code
-  end
+  puts length
 
   return raw_stations_list
 end
