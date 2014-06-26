@@ -10,6 +10,14 @@ end
 
 
 def cooking(raw_stations)
-  cooked_stations_list = raw_stations
-  return cooked_stations_list
+  raw_stations_list = raw_stations
+
+  array = raw_stations_list.keys
+  puts(length = arrays.size)
+
+  for key in raw_stations_list [do]
+   code
+  end
+
+  return raw_stations_list
 end
