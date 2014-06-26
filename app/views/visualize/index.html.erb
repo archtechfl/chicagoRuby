@@ -3,4 +3,10 @@
 
 <p> The Data Goes Below Here </p>
 
-<div><%= @visualize %></div>
+<% @visualize.each do |viz| %>
+
+ <div><%= viz['station_descriptive_name'] %></div>
+
+<% end %>
+
+
